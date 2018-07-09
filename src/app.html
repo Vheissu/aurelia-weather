@@ -1,0 +1,11 @@
+<template>
+  <h1 if.bind="!loading">Weather: ${location}</h1>
+  <h1 if.bind="loading">Loading...</h1>
+
+  <section if.bind="!loading">
+    <p><strong>Temperature:</strong> ${temp}&deg;</p>
+    <p>Low: ${tempLow}&deg;</p>
+    <p>High: ${tempHigh}&deg;</p>
+    ${description}
+  </section>
+</template>
