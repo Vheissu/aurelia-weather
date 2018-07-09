@@ -3,9 +3,8 @@
   <h1 if.bind="loading">Loading...</h1>
 
   <section if.bind="!loading">
-    <p><strong>Temperature:</strong> ${temp}&deg;</p>
+    <p><strong>Temperature:</strong> ${temp}&deg; - ${description}</p>
     <p>Low: ${tempLow}&deg;</p>
     <p>High: ${tempHigh}&deg;</p>
-    ${description}
   </section>
 </template>
